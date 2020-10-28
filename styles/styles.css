@@ -1,0 +1,94 @@
+:root {
+    --red: #e50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Não ultrapassa a borda da caixa */
+    font-weight: 800;
+    font-family: Roboto, Times, sans-serif;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body {
+    color: #ffffff;
+    background: var(--black);
+}
+
+header .logo {
+    color: var(--red);
+    font-size: 40px;
+    margin-left: 5px;
+    font-weight: 900;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #f1f1f1;
+}
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50) 100%), url('../images/the-president-United-States.jpg');
+    height: 500px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    margin-left: 3%;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 90px;
+    width: 60%;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
+.titulo {
+    font-size: 40px;
+    margin-top: 15%;
+    margin-bottom: 1%;
+    font-size: 'Trebuchet MS', arial, sans-serif;
+}
+
+.botao {
+    background: rgba(0, 0, 0, .50);
+    border: none;
+    color: #ffffff;
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 12px;
+    transition: .3s ease all;
+}
+
+.botao:hover {
+    background: #f1f1f1;
+    color: #000000;
+}
+
+.botao i {
+    margin-right: 8px;
+}
